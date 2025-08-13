@@ -25,6 +25,7 @@ a {
   margin: 0 auto;
 }
 /* HEADER */
+/* social */
 header .header-social {
   width: 100%;
   height: 50px;
@@ -89,6 +90,50 @@ header .header-social .social-items li a {
     font-size:12px ;
     font-weight: 400;
     line-height: 23px;
+}
+
+/* menu */
+header .header-menu {
+    width: 100%;
+    height: 100px;
+    background-color:rgb(255, 182, 0) ;
+
+}
+header .header-menu .container {
+    height: 110px;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+
+header .header-menu .container .logo img {
+    display: block;
+    width: 230px;
+}
+
+/* menu items */
+header .header-menu .container .menu-items {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+header .header-menu .container .menu-items li a {
+    font-size:17px ;
+    font-weight: 400;
+    transition: all 1s;
+}
+header .header-menu .container .menu-items li a:hover {
+    color: white;
+}
+header .header-menu .container .menu-items li a.Services::after {
+    content: ">";
+    padding-right: 16px;
+}
+header .header-menu .container .menu-items li:first-child a {
+    color: white;
 }
 /* MAIN */
 
