@@ -36,17 +36,37 @@ header .header-social .container {
   justify-content: space-between;
   align-items: center;
 }
+/* left */
 header .header-social .social-icons {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 17px;
+}
+header .header-social .social-icons li {
+    padding: 3px;
+    position: relative;
+
+}
+header .header-social .social-icons li:hover {
+    cursor: pointer;
+}
+header .header-social .social-icons li:hover:after {
+    content: attr(data-name);
+    color: white;
+    background-color: rgb(73, 73, 73);
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
 }
 header .header-social .social-icons li a i {
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
 }
-
+/* right */
 header .header-social .social-items {
   height: 100%;
   display: flex;
