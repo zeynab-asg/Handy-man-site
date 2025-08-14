@@ -11,7 +11,7 @@
 }
 
 body {
-  padding-bottom: 600px;
+  padding-bottom: 1200px;
 }
 :root {
   --main-color: rgb(255, 182, 0);
@@ -27,8 +27,8 @@ a {
   color: black;
 }
 .container {
-  width: 80%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 /* HEADER */
@@ -157,7 +157,10 @@ header .header-menu .container .menu-items li:first-child a {
   justify-content: center;
   align-items: center;
 }
-
+.hero-section .container {
+  position: relative;
+}
+/* hero-text */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -170,13 +173,12 @@ header .header-menu .container .menu-items li:first-child a {
   line-height: 24px;
   color: white;
   margin-bottom: 40px;
- text-transform: uppercase;
+  text-transform: uppercase;
 }
 .hero-text h1 {
   font-size: 68px;
   line-height: 86px;
   color: white;
-  
 }
 .hero-text .break {
   width: 100px;
@@ -184,12 +186,63 @@ header .header-menu .container .menu-items li:first-child a {
   background-color: var(--main-color);
   margin: 25px 0;
 }
-.hero-text:last-child {
+.hero-text .last-p {
   font-size: 21px;
   font-weight: 400;
   line-height: 40px;
-  color: white;
+  color: rgb(252, 252, 252);
 }
+
+/* hero-cards */
+.hero-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 120%;
+  left: 0;
+
+}
+
+.hero-cards .item {
+  width: 33%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.hero-cards .item img {
+  display: block;
+  width: 100%;
+}
+.hero-cards .item h2 {
+  padding: 40px 0;
+    font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.hero-cards .item p {
+      font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  height: 150px;
+}
+
+.hero-cards .item .btn {
+  background-color: var(--main-color);
+  padding: 18px 33px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+
+
+
+
+
 /* FOOTER */
 
 /* responsive */
@@ -201,6 +254,29 @@ header .header-menu .container .menu-items li:first-child a {
   header .header-menu .container .menu-items {
     width: 480px;
   }
+
+/* hero-cards */
+  .hero-cards .item {
+    padding: 30px;
+  }
+  .hero-cards .item h2 {
+    font-size: 20px;
+              line-height: 32px;
+
+    padding: 27px 0;
+  }
+  .hero-cards .item p {
+          font-size: 16px;
+                    line-height: 26px;
+
+  }
+  .hero-cards .item .btn {
+    font-size: 14px;
+              line-height: 21px;
+
+      padding: 12px 27px;
+
+  }
 }
 @media (max-width: 830px) {
   header .header-menu .container .menu-items {
@@ -208,6 +284,26 @@ header .header-menu .container .menu-items li:first-child a {
   }
   header .header-menu .container .menu-items li a {
     font-size: 15px;
+  }
+
+  /* hero-cards */
+  .hero-cards .item {
+    padding: 20px;
+  }
+  .hero-cards .item h2 {
+    font-size: 18px;
+              line-height: 28px;
+
+    padding: 22px 0;
+  }
+  .hero-cards .item p {
+          font-size: 14px;
+          line-height: 21px;
+  }
+  .hero-cards .item .btn {
+    font-size: 13px;
+      padding: 10px 22px;
+
   }
 }
 
